@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刘佳鑫 | 潮玩产品人 · 作品集</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">JX.</a>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- 移动端菜单 -->
+    <ul class="nav-mobile" id="navMobile">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting anim-fade-up">Hello, I'm</p>
+      <h1 class="hero-name anim-fade-up" style="animation-delay: 0.1s">刘佳鑫</h1>
+      <p class="hero-title anim-fade-up" style="animation-delay: 0.2s">
+        懂IP设计与用户洞察的<span class="highlight">潮玩产品人</span>
+      </p>
+      <p class="hero-subtitle anim-fade-up" style="animation-delay: 0.3s">
+        北京师范大学 · 品牌广告消费心理学硕士
+      </p>
+      <div class="hero-tags anim-fade-up" style="animation-delay: 0.4s">
+        <span class="tag">IP Design</span>
+        <span class="tag">Consumer Insight</span>
+        <span class="tag">Product Management</span>
+      </div>
+      <a href="#gallery" class="hero-cta anim-fade-up" style="animation-delay: 0.5s">
+        查看作品
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="hero-decoration">
+      <div class="hero-circle"></div>
+      <div class="hero-circle hero-circle--sm"></div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-label">IP Design Gallery</span>
+        <h2 class="section-title">潮玩IP画廊</h2>
+        <p class="section-desc">从灵感到实物，每一个IP都承载着独特的情感与故事</p>
+      </div>
+
+      <!-- 分类标签 -->
+      <div class="gallery-filters scroll-reveal">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="cotton">棉花娃娃</button>
+        <button class="filter-btn" data-filter="merch">周边衍生</button>
+        <button class="filter-btn" data-filter="blindbox">盲盒IP</button>
+      </div>
+
+      <!-- 瀑布流画廊 -->
+      <div class="masonry" id="masonry">
+
+        <!-- ===== 棉花娃娃 ===== -->
+        <!-- [替换指南] src="images/xxx.jpg" 换成你的图片路径 -->
+        <!-- [替换指南] data-name 改IP名字, data-desc 改设计理念 -->
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="起司净"
+             data-desc="原创IP · 招牌角色，累计销量6000+">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/916f3d502b17a91c517df08cb8b1b17d.jpg" alt="起司净 - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">起司净</h3>
+              <p class="masonry-desc">原创IP · 招牌角色，累计销量6000+</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="明星合作款"
+             data-desc="明星IP · 与后援会合作，销量500+">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/0b8242e7215a9e25d5c7564dbd426c4a.jpg" alt="明星合作款 - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">明星合作款</h3>
+              <p class="masonry-desc">明星IP · 与后援会合作，销量500+</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="无属性原厂娃娃"
+             data-desc="原创IP · 百搭无属性设计">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/ae4b8731d7d3b37c2d5deca2c0239941.jpg" alt="无属性原厂娃娃 - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">无属性原厂娃娃</h3>
+              <p class="masonry-desc">原创IP · 百搭无属性设计</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="蟹蟹"
+             data-desc="原创IP · 趣味螃蟹造型，首单300+">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/dcb4a35412a98f9fe920c83f990c977e.jpg" alt="蟹蟹 - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">蟹蟹</h3>
+              <p class="masonry-desc">原创IP · 趣味螃蟹造型，首单300+</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="小rua"
+             data-desc="原创IP · 粉色梦幻系列">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/1b00132b8ff90e68d0c034e904fc5a76.jpg" alt="小rua - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">小rua</h3>
+              <p class="masonry-desc">原创IP · 粉色梦幻系列</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="cotton"
+             data-name="明星合作款"
+             data-desc="明星IP · 与后援会合作，销量500+">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/1e00bfff8e76fd5fa6c7c66a2ba5faa6.jpg" alt="明星合作款 - 棉花娃娃" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">明星合作款</h3>
+              <p class="masonry-desc">明星IP · 与后援会合作，销量500+</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 周边衍生 ===== -->
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="亚克力立牌"
+             data-desc="原创插画衍生 · 明星应援周边">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/61ec8e60c262418ddb2968bd2bcbd694.jpg" alt="亚克力立牌" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">亚克力立牌</h3>
+              <p class="masonry-desc">原创插画衍生 · 明星应援周边</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="插画钱包"
+             data-desc="原创插画衍生 · 实用周边设计">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/84806dbf3b4abc549d3d26bcad1de391.jpg" alt="插画钱包" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">插画钱包</h3>
+              <p class="masonry-desc">原创插画衍生 · 实用周边设计</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="贴纸设计"
+             data-desc="原创插画衍生 · 趣味贴纸系列">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/8d4e2c9463193f7018d82c92a9910c0e.jpg" alt="贴纸设计" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">贴纸设计</h3>
+              <p class="masonry-desc">原创插画衍生 · 趣味贴纸系列</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="周边套装"
+             data-desc="衍生周边 · 综合套装产品">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/4e9da5401bac8fa6259cbd8a5fe47919.jpg" alt="周边套装" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">周边套装</h3>
+              <p class="masonry-desc">衍生周边 · 综合套装产品</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="应援周边"
+             data-desc="衍生设计 · 粉丝应援物料">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/944397205ff18c88d459f73ff80d3828.jpg" alt="应援周边" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">应援周边</h3>
+              <p class="masonry-desc">衍生设计 · 粉丝应援物料</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="插画设计"
+             data-desc="原创插画 · 角色人设图">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/646657f6d9943ba9e89b3b441b20311e.jpg" alt="插画设计" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">插画设计</h3>
+              <p class="masonry-desc">原创插画 · 角色人设图</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="衍生产品"
+             data-desc="周边衍生 · 多品类延展">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/d29503ab0655bb158526ffc5c29f993e.jpg" alt="衍生产品" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">衍生产品</h3>
+              <p class="masonry-desc">周边衍生 · 多品类延展</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="merch"
+             data-name="综合周边"
+             data-desc="原创设计 · 全品类周边">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/86d307e054afff07534f6751face1990.jpg" alt="综合周边" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">综合周边</h3>
+              <p class="masonry-desc">原创设计 · 全品类周边</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 盲盒IP ===== -->
+        <div class="masonry-item scroll-reveal" data-category="blindbox"
+             data-name="暂停小兔 · 全员展示"
+             data-desc="公益盲盒IP · 45度人生心理补偿方案">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/270299d014f444d1945c83d834e85aee.png" alt="暂停小兔 - 全员展示" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">暂停小兔 · 全员展示</h3>
+              <p class="masonry-desc">公益盲盒IP · 45度人生心理补偿方案</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="blindbox"
+             data-name="暂停公园 · 场景"
+             data-desc="治愈系微缩场景 · 赛博心理诊所概念">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/228e8d939a21fbc9a6d9b1991519372b.jpg" alt="暂停公园 - 场景" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">暂停公园 · 场景</h3>
+              <p class="masonry-desc">治愈系微缩场景 · 赛博心理诊所概念</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item scroll-reveal" data-category="blindbox"
+             data-name="暂停小兔 · 实物"
+             data-desc="公益盲盒手办 · 每只对应一种心理状态">
+          <div class="masonry-card">
+            <div class="masonry-img-wrap">
+              <img src="images/107952d08f2de1cef5467da2f13c4f2d.png" alt="暂停小兔 - 实物" loading="lazy">
+            </div>
+            <div class="masonry-info">
+              <h3 class="masonry-name">暂停小兔 · 实物</h3>
+              <p class="masonry-desc">公益盲盒手办 · 每只对应一种心理状态</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-label">Product Projects</span>
+        <h2 class="section-title">产品与项目经历</h2>
+        <p class="section-desc">从洞察到落地，用产品思维驱动每一个创意</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 项目卡片 1 -->
+        <div class="project-card scroll-reveal">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <h3 class="project-title">糕糕棉花糖 · 自营潮玩微店</h3>
+            <span class="project-role">创始人 / 产品全链路负责人</span>
+            <p class="project-detail">
+              独立运营潮玩品牌，主导从市场洞察、产品企划到供应商对接、生产监修及上市运营的全链路。覆盖原创IP、游戏IP、明星IP三大品类。
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome">
+                <span class="outcome-number">6000+</span>
+                <span class="outcome-label">累计销量</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">3</span>
+                <span class="outcome-label">IP品类线</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">全链路</span>
+                <span class="outcome-label">独立运营</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">创业</span>
+              <span class="project-tag">供应链管理</span>
+              <span class="project-tag">用户运营</span>
+              <span class="project-tag">产品企划</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 项目卡片 2 -->
+        <div class="project-card scroll-reveal">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <h3 class="project-title">暂停公园 · 公益盲盒IP设计</h3>
+            <span class="project-role">IP策划 / 产品设计</span>
+            <p class="project-detail">
+              基于Z世代心理健康调研，提出"45度人生"心理补偿方案。打造"暂停小兔"治愈系IP，构建"赛博心理诊所"概念——不仅是潮玩，更是心理干预的载体。每只小兔对应一种心理状态（焦虑缓解、积极关注、自我接纳），随盲盒附赠心理打卡卡片。
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome">
+                <span class="outcome-number">Z世代</span>
+                <span class="outcome-label">目标人群</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">6款</span>
+                <span class="outcome-label">角色设计</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">公益</span>
+                <span class="outcome-label">项目属性</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">IP设计</span>
+              <span class="project-tag">用户调研</span>
+              <span class="project-tag">心理洞察</span>
+              <span class="project-tag">概念创新</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 项目卡片 3 -->
+        <div class="project-card scroll-reveal">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <h3 class="project-title">CMAU市场研究与策划大赛 · 全国一等奖</h3>
+            <span class="project-role">队长 / 研究框架设计</span>
+            <p class="project-detail">
+              作为队长，构建"定性+定量+文献分析+生理脑电反馈"的混合研究模型，带领组员通过SPSS、MATLAB、Python进行数据分析，输出用户画像、产品认知度、竞品分析，识别市场缺口。为北师大创造历届最佳成绩。
+            </p>
+            <div class="project-outcomes">
+              <div class="outcome">
+                <span class="outcome-number">全国一等奖</span>
+                <span class="outcome-label">最终成绩</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">混合研究</span>
+                <span class="outcome-label">方法论</span>
+              </div>
+              <div class="outcome">
+                <span class="outcome-number">历届最佳</span>
+                <span class="outcome-label">校内纪录</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">市场研究</span>
+              <span class="project-tag">数据分析</span>
+              <span class="project-tag">策划</span>
+              <span class="project-tag">团队管理</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-label">About & Contact</span>
+        <h2 class="section-title">关于我</h2>
+      </div>
+
+      <div class="about-layout">
+        <!-- 左侧：个人照片 -->
+        <div class="about-photo scroll-reveal">
+          <div class="photo-frame">
+            <img src="images/profile.png" alt="刘佳鑫">
+          </div>
+          <div class="photo-name">
+            <h3>刘佳鑫</h3>
+            <span>产品专员 · 潮玩IP设计</span>
+          </div>
+        </div>
+
+        <!-- 中间：个人简介 -->
+        <div class="about-bio scroll-reveal">
+          <p class="about-text">
+            北京师范大学品牌广告消费心理学硕士（GPA 3.88/4，一等学业奖学金），本科毕业于湖南科技大学应用心理学专业（校级优秀毕业生）。
+          </p>
+          <p class="about-text">
+            深度ACG爱好者，热爱盲盒产品、棉花娃娃，了解动漫与游戏IP，并具备自营潮玩周边创业经历。能够把握盲盒、毛绒等潮玩用户心理与审美趋势。
+          </p>
+          <p class="about-text">
+            擅长主导从市场洞察、产品企划到供应商对接、生产监修及上市运营的全过程，具备全链路实操能力与跨部门协同经验。思维活跃、网感好，善于沟通，责任心强。
+          </p>
+
+          <div class="about-skills">
+            <h3 class="about-skills-title">核心能力</h3>
+            <div class="skills-list">
+              <span class="skill-item">消费者洞察</span>
+              <span class="skill-item">IP设计与企划</span>
+              <span class="skill-item">产品全链路管理</span>
+              <span class="skill-item">数据分析 (SPSS/Python)</span>
+              <span class="skill-item">供应链对接</span>
+              <span class="skill-item">用户运营</span>
+              <span class="skill-item">品牌管理</span>
+              <span class="skill-item">市场研究</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧：联系方式 -->
+        <div class="about-contact scroll-reveal">
+          <div class="contact-card">
+            <h3 class="contact-title">联系方式</h3>
+
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
+              <div>
+                <span class="contact-label">邮箱</span>
+                <a href="mailto:1319235372@qq.com" class="contact-value">1319235372@qq.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <span class="contact-label">电话</span>
+                <a href="tel:15112275792" class="contact-value">151 1227 5792</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              <div>
+                <span class="contact-label">学校</span>
+                <span class="contact-value">北京师范大学（985）· 2024-2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2025 刘佳鑫 · Designed with passion for Pop Mart</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
